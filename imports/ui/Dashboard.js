@@ -1,0 +1,19 @@
+import React from 'react';
+import { Meteor } from 'meteor/meteor';
+import { withRouter } from "react-router-dom";
+import { Accounts } from 'meteor/accounts-base';
+import PrivateHeader from './PrivateHeader';
+
+export default () => {
+    return (
+      <div>
+        <PrivateHeader title="Dashboard"/>
+        <div className="page-content">
+          Dashboard page content
+        </div>
+      </div>
+    );  
+};
+
+
+
